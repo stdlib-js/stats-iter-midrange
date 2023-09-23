@@ -18,6 +18,17 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # itermidrange
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
@@ -34,38 +45,30 @@ The [**mid-range**][mid-range], or **mid-extreme**, is the arithmetic mean of ma
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-midrange
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-itermidrange = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var itermidrange = require( 'path/to/vendor/umd/stats-iter-midrange/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.itermidrange;
-})();
-</script>
+var itermidrange = require( '@stdlib/stats-iter-midrange' );
 ```
 
 #### itermidrange( iterator )
@@ -105,14 +108,9 @@ var v = itermidrange( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var runif = require( '@stdlib/random-iter-uniform' );
+var itermidrange = require( '@stdlib/stats-iter-midrange' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -125,11 +123,6 @@ var v = itermidrange( rand );
 // returns <number>
 
 console.log( 'mid-range: %d.', v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -200,8 +193,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-iter-midrange.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-iter-midrange
 
-[test-image]: https://github.com/stdlib-js/stats-iter-midrange/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-iter-midrange/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/stats-iter-midrange/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/stats-iter-midrange/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-iter-midrange/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-iter-midrange?branch=main
@@ -238,13 +231,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean/tree/umd
+[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean
 
-[@stdlib/stats/iter/max]: https://github.com/stdlib-js/stats-iter-max/tree/umd
+[@stdlib/stats/iter/max]: https://github.com/stdlib-js/stats-iter-max
 
-[@stdlib/stats/iter/min]: https://github.com/stdlib-js/stats-iter-min/tree/umd
+[@stdlib/stats/iter/min]: https://github.com/stdlib-js/stats-iter-min
 
-[@stdlib/stats/iter/range]: https://github.com/stdlib-js/stats-iter-range/tree/umd
+[@stdlib/stats/iter/range]: https://github.com/stdlib-js/stats-iter-range
 
 <!-- </related-links> -->
 
