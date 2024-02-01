@@ -45,38 +45,32 @@ The [**mid-range**][mid-range], or **mid-extreme**, is the arithmetic mean of ma
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-midrange
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-itermidrange = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var itermidrange = require( 'path/to/vendor/umd/stats-iter-midrange/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.itermidrange;
-})();
-</script>
+var itermidrange = require( '@stdlib/stats-iter-midrange' );
 ```
 
 #### itermidrange( iterator )
@@ -116,14 +110,9 @@ var v = itermidrange( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var runif = require( '@stdlib/random-iter-uniform' );
+var itermidrange = require( '@stdlib/stats-iter-midrange' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -136,11 +125,6 @@ var v = itermidrange( rand );
 // returns <number>
 
 console.log( 'mid-range: %d.', v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -235,8 +219,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/stats-iter-midrange/tree/deno
+[deno-readme]: https://github.com/stdlib-js/stats-iter-midrange/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/stats-iter-midrange/tree/umd
+[umd-readme]: https://github.com/stdlib-js/stats-iter-midrange/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/stats-iter-midrange/tree/esm
+[esm-readme]: https://github.com/stdlib-js/stats-iter-midrange/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/stats-iter-midrange/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-iter-midrange/main/LICENSE
@@ -249,13 +236,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean/tree/umd
+[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean
 
-[@stdlib/stats/iter/max]: https://github.com/stdlib-js/stats-iter-max/tree/umd
+[@stdlib/stats/iter/max]: https://github.com/stdlib-js/stats-iter-max
 
-[@stdlib/stats/iter/min]: https://github.com/stdlib-js/stats-iter-min/tree/umd
+[@stdlib/stats/iter/min]: https://github.com/stdlib-js/stats-iter-min
 
-[@stdlib/stats/iter/range]: https://github.com/stdlib-js/stats-iter-range/tree/umd
+[@stdlib/stats/iter/range]: https://github.com/stdlib-js/stats-iter-range
 
 <!-- </related-links> -->
 
