@@ -52,7 +52,7 @@ The [**mid-range**][mid-range], or **mid-extreme**, is the arithmetic mean of ma
 ## Usage
 
 ```javascript
-import itermidrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@deno/mod.js';
+import itermidrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@v0.2.0-deno/mod.js';
 ```
 
 #### itermidrange( iterator )
@@ -94,7 +94,7 @@ var v = itermidrange( arr );
 
 ```javascript
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itermidrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@deno/mod.js';
+import itermidrange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@v0.2.0-deno/mod.js';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
