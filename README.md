@@ -54,7 +54,7 @@ The [**mid-range**][mid-range], or **mid-extreme**, is the arithmetic mean of ma
 To use in Observable,
 
 ```javascript
-itermidrange = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js' )
+itermidrange = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var itermidrange = require( 'path/to/vendor/umd/stats-iter-midrange/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -121,7 +121,7 @@ var v = itermidrange( arr );
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-midrange@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
